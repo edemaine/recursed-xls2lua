@@ -77,7 +77,7 @@ buildLevel = (rooms) ->
     spawns = []
     for row, y in room
       for cell, x in row
-        items = cell.split /[\s,]+/
+        items = cell.split /\s*[,;]\s*/
         for item in items
           if item of tileMapping
             tiles[y][x] = tileMapping[cell][0]
