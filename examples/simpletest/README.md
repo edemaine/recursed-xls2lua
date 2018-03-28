@@ -3,7 +3,6 @@
 ## Input spreadsheet:
 
 ![Google Sheets screenshot of start room](simpletest_gsheet1.png)
-
 ![Google Sheets screenshot of key room](simpletest_gsheet2.png)
 
 [.xlsx file](simpletest.xlsx) &bull;
@@ -12,7 +11,6 @@
 ## Output level of Recursed:
 
 ![Recursed screenshot of start room](simpletest1.png)
-
 ![Recursed screenshot of key room](simpletest2.png)
 
 [Lua level](simpletest.lua)
