@@ -84,7 +84,7 @@ buildLevel = (rooms) ->
             [item, arg] = item.split ':'
             if item of objectMapping
               if arg?
-                arg = ", #{arg}"
+                arg = ", \"#{arg.replace '"', '\\"'}\""
               else
                 arg = ""
               spawns.push "  Spawn(\"#{objectMapping[item]}\", #{x}, #{y}#{arg})"
@@ -93,6 +93,7 @@ buildLevel = (rooms) ->
     level.push "]])"
     level.push spawns...
     level.push "end"
+  level.push '' ## final newline
   level.join '\n'
 
 main = ->
