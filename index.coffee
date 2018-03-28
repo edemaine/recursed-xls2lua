@@ -63,7 +63,7 @@ objectHeight =
   player: 2
   box: 1
   key: 1
-  lock: 3
+  lock: 2.5
   chest: 1
   yield: 2
   crystal: 1 #?
