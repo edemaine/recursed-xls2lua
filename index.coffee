@@ -59,6 +59,20 @@ objectMapping =
   generic: 'generic'
   o: 'generic'
   oobleck: 'generic'
+objectHeight =
+  player: 2
+  box: 1
+  key: 1
+  lock: 3
+  chest: 1
+  yield: 2
+  crystal: 1 #?
+  diamond: 1 #?
+  record: 1
+  fan: 1
+  bird: 1
+  crux: 1
+  generic: 1
 
 buildLevel = (rooms) ->
   level = []
@@ -75,23 +89,38 @@ buildLevel = (rooms) ->
         for x in [0...width]
           '.'
     spawns = []
-    for row, y in room
-      for cell, x in row
-        items = cell.split /\s*[,;]\s*/
-        for item in items
-          if item of tileMapping
-            tiles[y][x] = tileMapping[cell][0]
-          else
-            [item, arg] = item.split ':'
-            if item of objectMapping
-              if arg?
-                ## Auto-quote rooms names for chests
-                if objectMapping[item] == 'chest' and arg[0] not in ['"', "'"]
-                  arg = "\"#{arg.replace '"', '\\"'}\""
-                arg = ", \"#{arg.replace '"', '\\"'}\""
-              else
-                arg = ""
-              spawns.push "  Spawn(\"#{objectMapping[item]}\", #{x}, #{y}#{arg})"
+    roomObjects =
+      for row, y in room
+        for cell, x in row
+          items = cell.split /\s*[,;]\s*/
+          for item in items
+            if item of tileMapping
+              tiles[y][x] = tileMapping[cell][0]
+              continue
+            else
+              [object, arg] = item.split ':'
+              continue unless object of objectMapping
+              object = objectMapping[object]
+              [object, arg]
+    for row, y in roomObjects
+      for items, x in row
+        for [object, arg] in items
+          if object of objectMapping
+            if arg?
+              ## Auto-quote room names for chests
+              if object == 'chest' and arg[0] not in ['"', "'"]
+                arg = "\"#{arg.replace '"', '\\"'}\""
+              arg = ", #{arg}"
+            else
+              arg = ""
+            for dy in [1...objectHeight[object]]
+              for [object2, ...], i in roomObjects[y+dy]?[x] ? []
+                if object2 == object
+                  roomObjects[y+dy][x].splice i, 1
+                  break
+            y += objectHeight[object] - 1
+            x += 0.5
+            spawns.push "  Spawn(\"#{objectMapping[object]}\", #{x}, #{y}#{arg})"
     level.push "  ApplyTiles(wip, 0, 0, [["
     level.push (row.join '' for row in tiles).join '\n'
     level.push "]])"
