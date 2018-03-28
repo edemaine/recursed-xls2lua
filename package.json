@@ -1,14 +1,22 @@
 {
-  "name": "recursed",
+  "name": "recursed-xls2lua",
   "version": "0.0.1",
-  "description": "",
+  "description": "Custom level design for Recursed via spreadsheets",
+  "repository": "https://github.com/edemaine/recursed-xls2lua",
   "main": "index.js",
+  "bin": {
+    "recursed-xls2lua": "index.js"
+  },
   "scripts": {
+    "prepare": "coffee -c index.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Erik Demaine",
   "license": "MIT",
   "dependencies": {
     "xlsx": "^0.12.6"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.12.4"
   }
 }
