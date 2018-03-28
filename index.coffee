@@ -18,7 +18,7 @@ loadXLSX = (data) ->
     rows.subname = subname
     rows
 
-tileNames = ['solid', 'ledge', 'water', 'acid']
+tileNames = ['solid', 'ledge', 'water', 'acid', 'buoy', 'ledgewet']
 tileMapping =
   s: 'solid'
   solid: 'solid'
@@ -28,6 +28,17 @@ tileMapping =
   water: 'water'
   a: 'acid'
   acid: 'acid'
+  buoy: 'buoy'
+  b: 'buoy'
+  ledgewet: 'ledgewet'
+  lw: 'ledgewet'
+tileChar =
+  solid: 's'
+  ledge: 'l'
+  water: 'w'
+  acid: 'a'
+  buoy: 'b'
+  ledgewet: 'L'
 objectNames = ['player', 'box', 'key', 'lock', 'chest', 'yield', 'crystal',
                'diamond', 'record', 'fan', 'bird', 'crux', 'generic']
 objectMapping =
@@ -79,7 +90,7 @@ buildLevel = (rooms) ->
   level = []
   ## First character to encode tiles
   level.push "local wip = { " +
-    ("#{tile[0]} = \"#{tile}\"" for tile in tileNames).join(', ') +
+    ("#{tileChar[tile]} = \"#{tile}\"" for tile in tileNames).join(', ') +
     " }"
   for room in rooms
     level.push "function #{room.subname}()"
@@ -98,7 +109,7 @@ buildLevel = (rooms) ->
           items = cell.split /\s*[,;]\s*/
           for item in items
             if item of tileMapping
-              tiles[y][x] = tileMapping[cell][0]
+              tiles[y][x] = tileChar[tileMapping[cell]]
               continue
             else
               [object, arg] = item.split ':'
