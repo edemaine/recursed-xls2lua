@@ -1,4 +1,4 @@
-local wip = { s = "solid", l = "ledge", w = "water", a = "acid" }
+local wip = { s = "solid", l = "ledge", w = "water", a = "acid", b = "buoy", L = "ledgewet" }
 function start()
   ApplyTiles(wip, 0, 0, [[
 ssssssssssssssssssss
