@@ -84,6 +84,8 @@ buildLevel = (rooms) ->
     level.push "function #{room.subname}()"
     height = room.length
     width = Math.max (row.length for row in room)...
+    unless width == 20 and height == 15
+      console.warn "Room #{room.subname} dimensions #{width}x#{height} instead of 20x15"
     tiles =
       for y in [0...height]
         for x in [0...width]
