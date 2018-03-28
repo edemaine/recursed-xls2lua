@@ -85,6 +85,9 @@ buildLevel = (rooms) ->
             [item, arg] = item.split ':'
             if item of objectMapping
               if arg?
+                ## Auto-quote rooms names for chests
+                if objectMapping[item] == 'chest' and arg[0] not in ['"', "'"]
+                  arg = "\"#{arg.replace '"', '\\"'}\""
                 arg = ", \"#{arg.replace '"', '\\"'}\""
               else
                 arg = ""
