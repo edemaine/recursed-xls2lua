@@ -46,6 +46,7 @@ objectMapping =
   yield: 'yield'
   cr: 'crystal'
   crystal: 'crystal'
+  goal: 'crystal'
   d: 'diamond'
   diamond: 'diamond'
   r: 'record'
