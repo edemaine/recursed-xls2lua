@@ -22,7 +22,7 @@ tileNames = ['solid', 'ledge', 'water', 'acid']
 tileMapping =
   s: 'solid'
   solid: 'solid'
-  l: 'ledge'
+  "-": 'ledge'
   ledge: 'ledge'
   w: 'water'
   water: 'water'
@@ -39,6 +39,7 @@ objectMapping =
   key: 'key'
   d: 'lock'
   door: 'lock'
+  l: 'lock'
   lock: 'lock'
   chest: 'chest'
   c: 'chest'
