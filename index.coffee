@@ -1,5 +1,5 @@
 #!/usr/bin/coffee --bare
-`#!/usr/bin/node
+`#!/usr/bin/env node
 `
 
 ## http://steamcommunity.com/sharedfiles/filedetails/?id=800043882
