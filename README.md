@@ -49,6 +49,11 @@ generic   | g, o, oobleck | oobleck (copy)      | 1
 Alternatively, a room can in its top-left corner a command of the form
 `duplicate:name` to make an identical copy of the room with title `name`
 (but the duplicate room will have the name of the sheet).
+In following rows, you can specify a sequence of transformations.
+The first column specifies the transformation; currently, this must be
+`replace`.  For `replace` commands, the second and third column specify
+a before and after transform (all cells exactly equal to the second column
+will be replaced with the third column).
 
 ## Installation
 

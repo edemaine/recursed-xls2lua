@@ -90,6 +90,11 @@ objectHeight =
   crux: 1
   generic: 1
 
+copyRoom = (room) ->
+  for row in room
+    for string in row
+      string
+
 buildLevel = (rooms) ->
   level = []
   ## First character to encode tiles
@@ -102,7 +107,17 @@ buildLevel = (rooms) ->
     level.push "function #{room.subname}()"
 
     if match = (room?[0]?[0] ? '').match /^duplicate:([^:]+)/
-      room = roomMap[match[1]]
+      newname = room.subname
+      commands = room[1..]
+      room = copyRoom roomMap[match[1]]
+      room.subname = newname
+      for command in commands
+        switch command[0]
+          when 'replace'
+            for row, y in room
+              for cell, x in row
+                if cell == command[1]
+                  row[x] = command[2]
 
     ## Remove trailing blank rows until we get to 15 rows
     ## (sometimes XLSX exports include these blank rows)
