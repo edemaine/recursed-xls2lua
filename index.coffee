@@ -167,11 +167,35 @@ buildLevel = (rooms) ->
   level.join '\n'
 
 main = ->
-  for filename in process.argv[2..]
+  filenames = []
+  outputDirs = null
+  skip = 0
+  args = process.argv[2..]
+  for arg, i in args
+    if skip > 0
+      skip--
+      continue
+    switch arg
+      when '-o'
+        outputDirs ?= []
+        outputDirs.push args[i+1]
+        skip = 1
+      else
+        filenames.push arg
+  for filename in filenames
+    console.log '**', filename
     filename2 = path.parse filename
     filename2.base = filename2.base[...-filename2.ext.length] + '.lua'
-    filename2 = path.format filename2
     sheets = loadXLSX fs.readFileSync filename, encoding: 'binary'
-    fs.writeFileSync filename2, buildLevel sheets
+    level = buildLevel sheets
+    if outputDirs?
+      for dirname in outputDirs
+        outname = path.join dirname, filename2.base
+        console.log '->', outname
+        fs.writeFileSync outname, level
+    else
+      outname = path.format filename2
+      console.log '->', outname
+      fs.writeFileSync outname, level
 
 main()

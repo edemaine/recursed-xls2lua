@@ -46,10 +46,31 @@ fan       | f             | paradox fan         | 1
 bird      | bi            | restart bird spawn  | 1
 generic   | g, o, oobleck | oobleck (copy)      | 1
 
-## Usage
+## Installation
+
+Assuming you have [Node and NPM](https://nodejs.org/) installed,
+the following command should install a global command `recursed-xls2lua`:
 
 ```bash
 npm install -g recursed-xls2lua
-recursed-xls2lua filename.xlsx
-## generates filename.lua
 ```
+
+You can also omit the `-g` to get a local installation, in which case
+`node_packages/recursed-xls2lua/index.js` is the executable.
+
+## Usage
+
+The primary usage is `recursed-xls2lua filename.xlsx`
+which generates `filename.lua`.
+
+You can also specify arguments `-o dirname` to output `filename.lua`
+into `dirname` instead of the directory of the `.xlsx` file.
+You can use this to export directly to Steam:
+
+```bash
+## Windows
+recursed-xls2lua -o 'c:/Program Files (x86)/Steam/steamapps/common/Recursed/custom/missions/' level.xlsx
+```
+
+You can specify multiple such arguments to output to multiple directories.
+For example, you can add `-o .` to also output to the current directory.
