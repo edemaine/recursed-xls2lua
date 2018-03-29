@@ -98,10 +98,17 @@ buildLevel = (rooms) ->
     " }"
   for room in rooms
     level.push "function #{room.subname}()"
+
+    ## Remove trailing blank rows until we get to 15 rows
+    ## (sometimes XLSX exports include these blank rows)
+    while room.length > 15 and
+          (cell for cell in room[room.length-1] when cell.trim().length).length == 0
+      room.pop()
     height = room.length
     width = Math.max (row.length for row in room)...
     unless width == 20 and height == 15
-      console.warn "Room #{room.subname} dimensions #{width}x#{height} instead of 20x15"
+      console.warn "Warning: Room #{room.subname} dimensions #{width}x#{height} instead of 20x15"
+
     tiles =
       for y in [0...height]
         for x in [0...width]
