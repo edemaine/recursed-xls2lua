@@ -42,7 +42,7 @@ generic   | g, o, oobleck | oobleck (copy)      | 1
 
 ## Usage
 
-```
+```bash
 npm install -g recursed-xls2lua
 recursed-xls2lua filename.xlsx
 ## generates filename.lua
