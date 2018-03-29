@@ -16,7 +16,13 @@ Each spreadsheet file corresponds to a level, and each sheet within
 the file corresponds to a room.  (The room name is the sheet name.)
 Each sheet should be 20 columns wide and 15 rows high.
 
-Each cell in a sheet can be one of the following:
+Each cell in a sheet can be one of the following **objects**.
+Some objects (box, key, lock, chest, fan, generics) can be prefixed with
+`!` to make it global.
+In addition, multiple objects can be placed at the same location
+by separating them with commas or semicolons.
+(But note that the first seven types are tiles, not objects, so you can't
+have more than one at the same location.)
 
 Full name | Aliases       | Meaning             | Height
 --------- | -------       | -------             | ------
@@ -47,7 +53,3 @@ npm install -g recursed-xls2lua
 recursed-xls2lua filename.xlsx
 ## generates filename.lua
 ```
-
-## TODO
-
-* Globals
