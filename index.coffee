@@ -148,8 +148,8 @@ buildLevel = (rooms) ->
                 if neighbor.object == object
                   roomObjects[y+dy][x].splice i, 1
                   break
-            y += objectHeight[object] - 1
-            x += 0.5
+            yActual = y + objectHeight[object] - 1
+            xActual = x + 0.5
             if global
               spawn = 'Global'
               if object in ['player', 'yield', 'crystal', 'diamond',
@@ -157,7 +157,7 @@ buildLevel = (rooms) ->
                 console.warn "Warning: #{object} should not be global"
             else
               spawn = 'Spawn'
-            spawns.push "  #{spawn}(\"#{objectMapping[object]}\", #{x}, #{y}#{arg})"
+            spawns.push "  #{spawn}(\"#{objectMapping[object]}\", #{xActual}, #{yActual}#{arg})"
     level.push "  ApplyTiles(wip, 0, 0, [["
     level.push (row.join '' for row in tiles).join '\n'
     level.push "]])"
