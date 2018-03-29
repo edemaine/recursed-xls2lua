@@ -145,7 +145,6 @@ buildLevel = (rooms) ->
               arg = ""
             for dy in [1...objectHeight[object]]
               for neighbor, i in roomObjects[y+dy]?[x] ? []
-                console.log object, dy, neighbor
                 if neighbor.object == object
                   roomObjects[y+dy][x].splice i, 1
                   break
