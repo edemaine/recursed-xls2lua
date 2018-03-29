@@ -1,3 +1,7 @@
+#!/usr/bin/coffee --bare
+`#!/usr/bin/node
+`
+
 ## http://steamcommunity.com/sharedfiles/filedetails/?id=800043882
 
 fs = require 'fs'
