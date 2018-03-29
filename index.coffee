@@ -33,7 +33,7 @@ tileMapping =
   a: 'acid'
   acid: 'acid'
   buoy: 'buoy'
-  b: 'buoy'
+  bu: 'buoy'
   ledgewet: 'ledgewet'
   lw: 'ledgewet'
 tileChar =
@@ -69,7 +69,7 @@ objectMapping =
   record: 'record'
   f: 'fan'
   fan: 'fan'
-  b: 'bird'
+  bi: 'bird'
   bird: 'bird'
   g: 'generic'
   generic: 'generic'

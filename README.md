@@ -37,7 +37,7 @@ crystal   | cr, goal      | goal of the level   | 1
 diamond   | d             | goal of a paradox   | 1
 record    | r             | narration ring, path specified by colon | 1
 fan       | f             | paradox fan         | 1
-bird      | b             | restart bird spawn  | 1
+bird      | bi            | restart bird spawn  | 1
 generic   | g, o, oobleck | oobleck (copy)      | 1
 
 ## Usage
