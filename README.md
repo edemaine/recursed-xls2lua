@@ -18,7 +18,7 @@ Each sheet should be 20 columns wide and 15 rows high.
 
 Each cell in a sheet can be one of the following **objects**.
 Some objects (box, key, lock, chest, fan, generics) can be prefixed with
-`!` to make it global.
+`!` to make them global (glowing green).
 In addition, multiple objects can be placed at the same location
 by separating them with commas or semicolons.
 (But note that the first seven types are tiles, not objects, so you can't
@@ -65,11 +65,11 @@ which generates `filename.lua`.
 
 You can also specify arguments `-o dirname` to output `filename.lua`
 into `dirname` instead of the directory of the `.xlsx` file.
-You can use this to export directly to Steam:
+You can use this to export a level directly to Steam:
 
 ```bash
 ## Windows
-recursed-xls2lua -o 'c:/Program Files (x86)/Steam/steamapps/common/Recursed/custom/missions/' level.xlsx
+recursed-xls2lua -o "c:/Program Files (x86)/Steam/steamapps/common/Recursed/custom/missions/" level.xlsx
 ```
 
 You can specify multiple such arguments to output to multiple directories.
