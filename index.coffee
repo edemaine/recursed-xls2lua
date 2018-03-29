@@ -63,7 +63,7 @@ objectMapping =
   cr: 'crystal'
   crystal: 'crystal'
   goal: 'crystal'
-  d: 'diamond'
+  di: 'diamond'
   diamond: 'diamond'
   r: 'record'
   record: 'record'

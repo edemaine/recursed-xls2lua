@@ -40,7 +40,7 @@ lock      | l, d, door    | locked door         | 3
 chest     | c             | room specified by colon | 1
 yield     | y             | green glow creating jar | 1
 crystal   | cr, goal      | goal of the level   | 1
-diamond   | d             | goal of a paradox   | 1
+diamond   | di            | goal of a paradox   | 1
 record    | r             | narration ring, path specified by colon | 1
 fan       | f             | paradox fan         | 1
 bird      | bi            | restart bird spawn  | 1
