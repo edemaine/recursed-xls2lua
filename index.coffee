@@ -81,7 +81,7 @@ objectHeight =
   key: 1
   lock: 2.5
   chest: 1
-  yield: 2
+  yield: 1
   crystal: 1 #?
   diamond: 1 #?
   record: 1
