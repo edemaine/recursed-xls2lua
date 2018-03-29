@@ -1,6 +1,6 @@
 {
   "name": "recursed-xls2lua",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Custom level design for Recursed via spreadsheets",
   "repository": "https://github.com/edemaine/recursed-xls2lua",
   "main": "index.js",
