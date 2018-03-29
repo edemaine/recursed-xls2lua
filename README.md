@@ -40,6 +40,14 @@ fan       | f             | paradox fan         | 1
 bird      | b             | restart bird spawn  | 1
 generic   | g, o, oobleck | oobleck (copy)      | 1
 
+## Usage
+
+```
+npm install -g recursed-xls2lua
+recursed-xls2lua filename.xlsx
+## generates filename.lua
+```
+
 ## TODO
 
 * Globals
