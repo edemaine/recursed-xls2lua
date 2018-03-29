@@ -46,6 +46,10 @@ fan       | f             | paradox fan         | 1
 bird      | bi            | restart bird spawn  | 1
 generic   | g, o, oobleck | oobleck (copy)      | 1
 
+Alternatively, a room can in its top-left corner a command of the form
+`duplicate:name` to make an identical copy of the room with title `name`
+(but the duplicate room will have the name of the sheet).
+
 ## Installation
 
 Assuming you have [Node and NPM](https://nodejs.org/) installed,

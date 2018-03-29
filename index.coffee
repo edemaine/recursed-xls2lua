@@ -96,8 +96,13 @@ buildLevel = (rooms) ->
   level.push "local wip = { " +
     ("#{tileChar[tile]} = \"#{tile}\"" for tile in tileNames).join(', ') +
     " }"
+  roomMap = {}
   for room in rooms
+    roomMap[room.subname] = room
     level.push "function #{room.subname}()"
+
+    if match = (room?[0]?[0] ? '').match /^duplicate:([^:]+)/
+      room = roomMap[match[1]]
 
     ## Remove trailing blank rows until we get to 15 rows
     ## (sometimes XLSX exports include these blank rows)
