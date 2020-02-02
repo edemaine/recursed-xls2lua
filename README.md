@@ -87,7 +87,7 @@ For example, you can add `-o .` to also output to the current directory.
 ### Expansion
 
 You can also use this tool to just process all `duplicate` rooms and write out
-a fullyexpanded `.xlsx` file.  Specifically,
+a fully expanded `.xlsx` file.  Specifically,
 `recursed-xls2lua -e filename.xlsx` generates `filename-expanded.xlsx`.
 Such an expanded spreadsheet can be useful as input to
 [svgtiler](https://github.com/edemaine/svgtiler/)
