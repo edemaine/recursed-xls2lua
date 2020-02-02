@@ -14,7 +14,7 @@
   "author": "Erik Demaine",
   "license": "MIT",
   "dependencies": {
-    "xlsx": "^0.12.6"
+    "xlsx": "^0.15.5"
   },
   "devDependencies": {
     "coffee-script": "^1.12.4"
