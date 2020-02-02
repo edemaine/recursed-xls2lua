@@ -83,3 +83,12 @@ recursed-xls2lua -o "c:/Program Files (x86)/Steam/steamapps/common/Recursed/cust
 
 You can specify multiple such arguments to output to multiple directories.
 For example, you can add `-o .` to also output to the current directory.
+
+### Expansion
+
+You can also use this tool to just process all `duplicate` rooms and write out
+a fullyexpanded `.xlsx` file.  Specifically,
+`recursed-xls2lua -e filename.xlsx` generates `filename-expanded.xlsx`.
+Such an expanded spreadsheet can be useful as input to
+[svgtiler](https://github.com/edemaine/svgtiler/)
+as an alternate rendering engine.
