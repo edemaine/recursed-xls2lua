@@ -2,27 +2,27 @@ local wip = { s = "solid", l = "ledge", w = "water", a = "acid", b = "buoy", L =
 function start()
   ApplyTiles(wip, 0, 0, [[
 ssssssssssssssssssss
-s...........s......s
-s...........s......s
-s...........s......s
-s...........s......s
-s...........s......s
-s...........s......s
-s...........s......s
-s...........s......s
-s...........s......s
-s..................s
-s..................s
-s..................s
+ssssssssssssssssssss
+ssssssssssssssssssss
+ssssssssssssssssssss
+ssssssss......s....s
+ssssssss......s....s
+ssssssss......s....s
+ssssssss......s....s
+s......s...........s
+s.......lls........s
+s.........s........s
+ssssssssssssssssssss
+ssssssssssssssssssss
 ssssssssssssssssssss
 ssssssssssssssssssss
 ]])
-  Spawn("crystal", 16.5, 7.5)
-  Spawn("lock", 12.5, 11.5)
-  Spawn("player", 2.5, 12)
-  Spawn("box", 4.5, 12)
-  Spawn("chest", 6.5, 12, "A00")
-  Spawn("chest", 8.5, 12, "global_lock")
+  Spawn("crystal", 16.5, 5.5)
+  Spawn("lock", 14.5, 9.5)
+  Spawn("player", 2.5, 10)
+  Spawn("box", 4.5, 10)
+  Spawn("chest", 6.5, 10, "A00")
+  Spawn("chest", 12.5, 10, "global_lock")
 end
 function blank_template()
   ApplyTiles(wip, 0, 0, [[
@@ -1159,13 +1159,13 @@ s.............s....s
 s...s..s...ssss..s.s
 slsssssslllssss..s.s
 s.ssssssssssssslss.s
-sls..sssss....ssss.s
-s.s..s...s....s....s
-sls..s...s....s....s
-s.s....s...s....s..s
+slssssssss....ssss.s
+s.ssss...s....s....s
+slssss...s....s....s
+s.ssss.s...s....s..s
 sl.....s...s....s..s
-s...s..ss..ss...ss.s
-ss..s..ss..sss..ss.s
+s......ss..ss...ss.s
+ss.....ss..sss..ss.s
 ssssslllllllllllllls
 ]])
   Spawn("lock", 15.5, 1.5)
@@ -1190,13 +1190,13 @@ s.............s....s
 s...s..s...ssss..s.s
 slsssssslllssss..s.s
 s.ssssssssssssslss.s
-sls..sssss....ssss.s
-s.s..s...s....s....s
-sls..s...s....s....s
-s.s....s...s....s..s
+slssssssss....ssss.s
+s.ssss...s....s....s
+slssss...s....s....s
+s.ssss.s...s....s..s
 sl.....s...s....s..s
-s...s..ss..ss...ss.s
-ss..s..ss..sss..ss.s
+s......ss..ss...ss.s
+ss.....ss..sss..ss.s
 ssssslllllllllllllls
 ]])
   Spawn("lock", 15.5, 1.5)
@@ -1221,13 +1221,13 @@ s.............s....s
 s...s..s...ssss..s.s
 slsssssslllssss..s.s
 s.ssssssssssssslss.s
-sls..sssss....ssss.s
-s.s..s...s....s....s
-sls..s...s....s....s
-s.s....s...s....s..s
+slssssssss....ssss.s
+s.ssss...s....s....s
+slssss...s....s....s
+s.ssss.s...s....s..s
 sl.....s...s....s..s
-s...s..ss..ss...ss.s
-ss..s..ss..sss..ss.s
+s......ss..ss...ss.s
+ss.....ss..sss..ss.s
 ssssslllllllllllllls
 ]])
   Spawn("lock", 15.5, 1.5)
