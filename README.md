@@ -6,6 +6,24 @@ using a simple spreadsheet input format, as an alternative to
 (and converting to) the
 [custom level Lua format](http://steamcommunity.com/sharedfiles/filedetails/?id=800043882).
 
+The spreadsheet format also enables easy
+[rendering of "screenshots" in SVG format](svgtiler)
+using [SVG Tiler](https://github.com/edemaine/svgtiler).
+This is how we drew the figures in the 2020 paper
+&ldquo;[Recursed is not Recursive:
+A Jarring Result](https://arxiv.org/abs/2002.05131)&rdquo;
+by Demaine, Kopinsky, and Lynch (ISAAC 2020).
+
+## Examples
+
+### 1. [Very Simple Level](examples/simpletest)
+
+<img align="middle" height="200" src="examples/simpletest/simpletest_gsheet1.png"> &rarr; <img align="middle" height="200" src="examples/simpletest/simpletest1.png">
+
+### 2. [Undecidability Reduction Example](examples/undecidable)
+
+<img width="250" src="examples/undecidable/undecidable_start.svg"> <img width="250" src="examples/undecidable/undecidable_BJ00.svg">
+
 ## Input Format
 
 The input file can be any spreadsheet format supported by

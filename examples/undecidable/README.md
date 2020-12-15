@@ -1,4 +1,4 @@
-# Undecidability Construction
+# Undecidability Reduction
 
 ## Paper and Result
 
