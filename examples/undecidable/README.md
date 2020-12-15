@@ -14,8 +14,11 @@ which implies that there is no finite algorithm to solve the problem
 ## Specific Example
 
 The specific level presented here is a minimal example of the reduction
-from that paper, with just two dominoes.
-It is winnable, but quite difficult to do so.
+from that paper, representing an instance of the
+[Post Correspondence Problem](https://en.wikipedia.org/wiki/Post_correspondence_problem)
+with just two dominoes: `[a|ab]` and `[ba|b]`.
+The level is winnable (by selecting each domino once in turn),
+but it is quite difficult to do so in practice.
 
 ## Output Level
 
