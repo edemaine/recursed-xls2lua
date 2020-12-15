@@ -47,13 +47,13 @@ end
 function domino_choice()
   ApplyTiles(wip, 0, 0, [[
 ssssssssssssssssssss
-s....s...s..s...s..s
-s....s...s..s...s..s
-sllll..s.sll..s....s
-s.............s....s
+sss..s...s..s...s..s
+sss......s..s...s..s
+sssll..s.sll..s....s
+s..ls.........s....s
 s...s..s...ssss..s.s
-slsssssslllssss..s.s
-s.ssssssssssssslss.s
+slslsssslllssss..s.s
+s.s.ssssssssssslss.s
 slssssss......sss..s
 s.ssssss...........s
 slssssss.s.........s
@@ -77,13 +77,13 @@ function stop()
   ApplyTiles(wip, 0, 0, [[
 ssssssssssssssssssss
 ssssssssssssssssssss
-s....s...s..s...ss.s
-s....s...s..s...s..s
-sllll..s.sll..s....s
-s.............s....s
+sss..s...s..s...ss.s
+sss......s..s...s..s
+sssll..s.sll..s....s
+s..ls.........s....s
 s...s..s...ssss..s.s
-slsssssslllssss..s.s
-s.ssssssssssssslss.s
+slslsssslllssss..s.s
+s.s.ssssssssssslss.s
 slssssssssssssssss.s
 s..................s
 sl.................s
@@ -1053,13 +1053,13 @@ ssssssssssssssssssss
 end
 function A00()
   ApplyTiles(wip, 0, 0, [[
-s....s...s..s...s..s
-s....s...s..s...s..s
-sllll..s.sll..s....s
-s.............s....s
+sss..s...s..s...s..s
+sss......s..s...s..s
+sssll..s.sll..s....s
+s..ls.........s....s
 s...s..s...ssss..s.s
-slsssssslllssss..s.s
-s.ssssssssssssslss.s
+slslsssslllssss..s.s
+s.s.ssssssssssslss.s
 slssssssss....ssss.s
 s.ssss...s....s....s
 slssss...s....s....s
@@ -1086,13 +1086,13 @@ ssssssllllllllllllls
 end
 function A01()
   ApplyTiles(wip, 0, 0, [[
-s....s...s..s...s..s
-s....s...s..s...s..s
-sllll..s.sll..s....s
-s.............s....s
+sss..s...s..s...s..s
+sss......s..s...s..s
+sssll..s.sll..s....s
+s..ls.........s....s
 s...s..s...ssss..s.s
-slsssssslllssss..s.s
-s.ssssssssssssslss.s
+slslsssslllssss..s.s
+s.s.ssssssssssslss.s
 slssssssss....ssss.s
 s.ssss...s....s....s
 slssss...s....s....s
@@ -1119,13 +1119,13 @@ ssssssllllllllllllls
 end
 function A10()
   ApplyTiles(wip, 0, 0, [[
-s....s...s..s...s..s
-s....s...s..s...s..s
-sllll..s.sll..s....s
-s.............s....s
+sss..s...s..s...s..s
+sss......s..s...s..s
+sssll..s.sll..s....s
+s..ls.........s....s
 s...s..s...ssss..s.s
-slsssssslllssss..s.s
-s.ssssssssssssslss.s
+slslsssslllssss..s.s
+s.s.ssssssssssslss.s
 slssssssss....ssss.s
 s.ssss...s....s....s
 slssss...s....s....s
@@ -1152,13 +1152,13 @@ ssssssllllllllllllls
 end
 function BC00()
   ApplyTiles(wip, 0, 0, [[
-s....s...s..s...s..s
-s....s...s..s...s..s
-sllll..s.sll..s....s
-s.............s....s
+sss..s...s..s...s..s
+sss......s..s...s..s
+sssll..s.sll..s....s
+s..ls.........s....s
 s...s..s...ssss..s.s
-slsssssslllssss..s.s
-s.ssssssssssssslss.s
+slslsssslllssss..s.s
+s.s.ssssssssssslss.s
 slssssssss....ssss.s
 s.ssss...s....s....s
 slssss...s....s....s
@@ -1183,13 +1183,13 @@ ssssslllllllllllllls
 end
 function BC10()
   ApplyTiles(wip, 0, 0, [[
-s....s...s..s...s..s
-s....s...s..s...s..s
-sllll..s.sll..s....s
-s.............s....s
+sss..s...s..s...s..s
+sss......s..s...s..s
+sssll..s.sll..s....s
+s..ls.........s....s
 s...s..s...ssss..s.s
-slsssssslllssss..s.s
-s.ssssssssssssslss.s
+slslsssslllssss..s.s
+s.s.ssssssssssslss.s
 slssssssss....ssss.s
 s.ssss...s....s....s
 slssss...s....s....s
@@ -1214,13 +1214,13 @@ ssssslllllllllllllls
 end
 function BC11()
   ApplyTiles(wip, 0, 0, [[
-s....s...s..s...s..s
-s....s...s..s...s..s
-sllll..s.sll..s....s
-s.............s....s
+sss..s...s..s...s..s
+sss......s..s...s..s
+sssll..s.sll..s....s
+s..ls.........s....s
 s...s..s...ssss..s.s
-slsssssslllssss..s.s
-s.ssssssssssssslss.s
+slslsssslllssss..s.s
+s.s.ssssssssssslss.s
 slssssssss....ssss.s
 s.ssss...s....s....s
 slssss...s....s....s
@@ -1245,13 +1245,13 @@ ssssslllllllllllllls
 end
 function BJ00()
   ApplyTiles(wip, 0, 0, [[
-s....s...s..s...s..s
-s....s...s..s...s..s
-sllll..s.sll..s....s
-s.............s....s
+sss..s...s..s...s..s
+sss......s..s...s..s
+sssll..s.sll..s....s
+s..ls.........s....s
 s...s..s...ssss..s.s
-slsssssslllssss..s.s
-s.ssssssssssssslss.s
+slslsssslllssss..s.s
+s.s.ssssssssssslss.s
 slssss...s...sssss.s
 s.ssss...s...s.....s
 slssss...s...s.....s
@@ -1277,13 +1277,13 @@ ssssssllllllllllllls
 end
 function BJ10()
   ApplyTiles(wip, 0, 0, [[
-s....s...s..s...s..s
-s....s...s..s...s..s
-sllll..s.sll..s....s
-s.............s....s
+sss..s...s..s...s..s
+sss......s..s...s..s
+sssll..s.sll..s....s
+s..ls.........s....s
 s...s..s...ssss..s.s
-slsssssslllssss..s.s
-s.ssssssssssssslss.s
+slslsssslllssss..s.s
+s.s.ssssssssssslss.s
 slssss...s...sssss.s
 s.ssss...s...s.....s
 slssss...s...s.....s
@@ -1309,13 +1309,13 @@ ssssssllllllllllllls
 end
 function BJ11()
   ApplyTiles(wip, 0, 0, [[
-s....s...s..s...s..s
-s....s...s..s...s..s
-sllll..s.sll..s....s
-s.............s....s
+sss..s...s..s...s..s
+sss......s..s...s..s
+sssll..s.sll..s....s
+s..ls.........s....s
 s...s..s...ssss..s.s
-slsssssslllssss..s.s
-s.ssssssssssssslss.s
+slslsssslllssss..s.s
+s.s.ssssssssssslss.s
 slssss...s...sssss.s
 s.ssss...s...s.....s
 slssss...s...s.....s

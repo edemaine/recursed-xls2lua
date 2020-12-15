@@ -1,4 +1,4 @@
-# Simple test example with 2 rooms
+# Demonstration of Undecidability construction
 
 ## Input spreadsheet:
 
@@ -7,4 +7,8 @@
 
 ## Output level of Recursed:
 
-[Lua level](simpletest.lua)
+[Lua level](undecidable.lua)
+
+## White paper on the construction and result:
+
+[arXiv link](https://arxiv.org/abs/2002.05131)
