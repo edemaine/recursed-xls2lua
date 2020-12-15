@@ -11,6 +11,14 @@ proves that deciding whether you can win a level of the video game
 which implies that there is no finite algorithm to solve the problem
 ([undecidability](https://en.wikipedia.org/wiki/Undecidable_problem)).
 
+## Screenshots
+
+Here are "screenshots" (actually SVG renderings of the rooms produced by
+[SVG Tiler](https://github.com/edemaine/svgtiler))
+of some of the key rooms in the level.  See the paper for details.
+
+<img width="250" src="undecidable_domino_choice.svg"> <img width="250" src="undecidable_A00.svg"> <img width="250" src="undecidable_BJ00.svg"> <img width="250" src="undecidable_KA01.svg"> <img width="250" src="undecidable_start.svg"> <img width="250" src="undecidable_VA01.svg"> <img width="250" src="undecidable_PA01.svg"> <img width="250" src="undecidable_global_lock.svg">
+
 ## Specific Example
 
 The specific level presented here is a minimal example of the reduction
