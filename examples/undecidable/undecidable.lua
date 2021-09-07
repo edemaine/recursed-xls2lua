@@ -17,7 +17,7 @@ ssssssssssssssssssss
 ssssssssssssssssssss
 ssssssssssssssssssss
 ]])
-  Spawn("crystal", 16.5, 5.5)
+  Spawn("crystal", 16.5, 5)
   Spawn("lock", 14.5, 9.5)
   Spawn("player", 2.5, 10)
   Spawn("box", 4.5, 10)
